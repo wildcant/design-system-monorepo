@@ -1,4 +1,6 @@
-import { Box, Button, useColorScheme } from 'ui'
+import { useColorScheme } from '@mui/joy'
+import { Box } from '../box'
+import { Button } from '../button'
 
 function Moon() {
   return (
@@ -44,7 +46,7 @@ function Sun() {
   )
 }
 
-export function ModeToggle() {
+export function ThemeToggle() {
   const { mode, setMode } = useColorScheme()
   return (
     <Box sx={{ position: 'absolute', right: 24, top: 16 }}>

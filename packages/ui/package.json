@@ -6,13 +6,11 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.umd.cjs",
-  "module": "./dist/index.js",
+  "module": "./dist/*",
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs",
-      "types": "./dist/index.d.ts"
+    "./*": {
+      "import": "./dist/*",
+      "types": "./dist/*.d.ts"
     }
   },
   "scripts": {
@@ -28,9 +26,12 @@
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "@mui/joy": "^5.0.0-beta.6",
+    "@radix-ui/react-slot": "^1.0.2",
     "clsx": "^2.0.0",
+    "lucide-react": "^0.279.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.1"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.4.2",

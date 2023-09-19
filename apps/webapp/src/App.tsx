@@ -1,6 +1,10 @@
 import { useState } from 'react'
-import { Button, Container, Grid, Stack, Typography } from 'ui'
-import { ModeToggle } from './ThemeToggle'
+import { Button } from 'ui/button'
+import { Container } from 'ui/container'
+import { Grid } from 'ui/grid'
+import { Stack } from 'ui/stack'
+import { ThemeToggle } from 'ui/theme.js'
+import { Typography } from 'ui/typography'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -19,7 +23,7 @@ function App() {
           Vite + React + Joy UI + Storybook
         </Typography>
 
-        <ModeToggle />
+        <ThemeToggle />
 
         <Stack gap={4}>
           <Stack direction="row">
