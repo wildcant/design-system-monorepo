@@ -3,7 +3,7 @@ import { Button } from 'ui/button'
 import { Container } from 'ui/container'
 import { Grid } from 'ui/grid'
 import { Stack } from 'ui/stack'
-import { ThemeToggle } from 'ui/theme.js'
+import { ThemeToggle } from 'ui/theme'
 import { Typography } from 'ui/typography'
 
 function App() {
